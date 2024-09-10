@@ -1,52 +1,58 @@
 .header {
     position: relative;
     height: 100svh;
-  }
-  .header__top {
+    display: flex;
+    flex-direction: column;
+}
+
+.header__top {
     background: linear-gradient(90.09deg, #3800af 0%, #bf7204 97.52%, #c27500 100%, #c27500 100%);
     padding: 20px 0;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 24px;
-  }
-  .header__top-icon {
+}
+
+.header__top-icon {
     font-size: 50px;
     color: var(--w);
     animation: rotate 2s infinite linear;
-  }
-  .header__top-text {
+}
+
+.header__top-text {
     font-family: var(--C);
     font-weight: 400;
     max-width: 166px;
     width: 100%;
-  }
-  
-  .header__nav {
+}
+
+.header__nav {
     position: sticky;
     top: 0;
     background: #010305cc;
-  }
-  
-  .header__nav-wrap {
+}
+
+.header__nav-wrap {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-  
-  .header__nav-logo {
+}
+
+.header__nav-logo {
     display: flex;
     align-items: flex-end;
     gap: 5px;
     color: var(--w);
-  }
-  
-  .header__nav-list {
+}
+
+.header__nav-list {
     display: flex;
     align-items: center;
     gap: 18px;
-  }
-  .header__nav-list-item_link {
+}
+
+.header__nav-list-item_link {
     display: block;
     padding: 42px 6px;
     position: relative;
@@ -54,12 +60,13 @@
     font-family: var(--M);
     font-size: 14px;
     font-weight: 400;
-  }
-  
-  .header__nav-list-item_link:hover {
+}
+
+.header__nav-list-item_link:hover {
     color: var(--orange);
-  }
-  .header__nav-list-item_link::after {
+}
+
+.header__nav-list-item_link::after {
     content: '';
     border-radius: 10px 10px 0 0;
     position: absolute;
@@ -70,29 +77,32 @@
     height: 3px;
     transition: 0.3s;
     background: var(--orange);
-  }
-  .header__nav-list-item_link:hover::after {
+}
+
+.header__nav-list-item_link:hover::after {
     width: 100%;
-  }
-  
-  @media screen and (max-width: 630px) {
+}
+
+@media screen and (max-width: 630px) {
     .header__nav-logo {
-      flex-direction: column;
-      align-items: center;
+        flex-direction: column;
+        align-items: center;
     }
-  }
-  @media screen and (max-width: 520px) {
+}
+
+@media screen and (max-width: 520px) {
     .header__nav-wrap {
-      flex-direction: column;
-      padding-top: 20px;
+        flex-direction: column;
+        padding-top: 20px;
     }
+
     .header__nav-list-item_link {
-      padding: 20px 6px;
+        padding: 20px 6px;
     }
-  }
-  @media screen and (max-width: 420px) {
+}
+
+@media screen and (max-width: 420px) {
     .header__nav-list {
-      gap: 10px;
+        gap: 10px;
     }
-  }
-  
+}
