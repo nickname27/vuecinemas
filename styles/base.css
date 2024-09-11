@@ -54,7 +54,7 @@ body {
     }
 }
 
-@media (hover:hover) {
+@media (hover:none) {
     .btn:active {
         background: var(--lightOrange);
         color: var(--b);
