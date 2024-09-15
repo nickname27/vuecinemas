@@ -106,6 +106,27 @@
 }
 
 
-@media screen and (max-width: 1120px) {
-    
+@media screen and (max-width: 1140px) {
+    .films__card-wrap{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .films__card:nth-child(1){
+        justify-self: right;
+    }
+    .films__card:nth-child(3){
+        justify-self: right;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .films__card-wrap{
+        grid-template-columns: repeat(1, 1fr);
+        place-items: center;
+    }
+    .films__card:nth-child(1){
+        justify-self: center; 
+    }
+    .films__card:nth-child(3){
+        justify-self: center;
+    }
 }
